@@ -33,10 +33,10 @@ int main(){
       xbee_reply[1] = '\0';
    }
 
-   xbee.write("ATMY 0x273\r\n", 12);
-   reply_messange(xbee_reply, "setting MY : 0x273");
-   xbee.write("ATDL 0x173\r\n", 12);
-   reply_messange(xbee_reply, "setting DL : 0x173");
+   xbee.write("ATMY 0x220\r\n", 12);
+   reply_messange(xbee_reply, "setting MY : 0x220");
+   xbee.write("ATDL 0x120\r\n", 12);
+   reply_messange(xbee_reply, "setting DL : 0x120");
 
    xbee.write("ATID 0x1\r\n", 10);
    reply_messange(xbee_reply, "setting PAN ID : 0x1");
